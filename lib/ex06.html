@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+           <!-- 横のセルを２つ結合する -->
+           <th>4月</th>
+           <th>29日</th>
+           <th>昭和の日</th>
+           
+        </th>
+        <tr>
+           <th rowspan="3">５月</th>
+           <th>3日</th>
+           <th>憲法記念日</th>
+        </th>
+        <tr>
+           <th>4日</th>
+           <th>みどりの日</th>
+           
+        </tr>
+        <tr>
+            <th>5日</th>
+            <th>こどもの日</th>
+           
+            
+         </tr>
+         <tr>
+            <th>７月</th>
+            <th>第3月曜日</th>
+            <th>海の日</th>
+            
+         </tr>
+         </table>
+
+         <!-- ファイルをアップデートする場合はenctype="multipart/form-data"を追記する必要がある -->
+         <form action="#" method="post" enctype="multipart/form-data">
+
+            <label for="nameField">名前：</label>
+            <input id="nameField"type="text"name="name"><br>
+            <!-- <input type="text"name="name"><br> -->
+            
+            <!-- labelで囲むとフォーム名をクリックした際にフィールドにフォーカスがあたる -->
+            <label>パスワード：<input type="password"name="pass"><br>
+            </label>
+
+            <!-- ラジオボタンは丸ポチのボタンのこと、返されるのはvalueの部分、checkedを入力しとくと初期でチェックされた状態になる -->
+            <input type="radio"name="gender"value="male"checked>男
+            <input type="radio"name="gender"value="female">女<br>
+
+            <input type="checkbox"name="triathlon"value="swim">水泳<br>
+            <input type="checkbox"name="triathlon"value="bike">自転車<br>
+            <input type="checkbox"name="triathlon"value="run">走る<br>
+
+            <input type="file"name="resume">
+
+            <p>
+
+                <!-- 非表示フィールド -->
+                <input type="hidden"name="employeeld"value="12345"><br>
+
+           
+                <textarea name="remarks"rows="10"cols="55"></textarea>
+
+            </p>
+            <!-- セレクトメニュー -->
+            <p>
+                <select name="hobby">
+                    <option value="swim"selected>水泳</option>
+                    <option value="bike">自転車</option>
+                    <option value="run">走る</option>
+                </select>
+
+            </p>
+            <!-- 複数選択可能なセレクトメニュー -->
+            <p>
+                <select name="hobby"multiple>
+                    <option value="swim">水泳</option>
+                    <option value="bike">自転車</option>
+                    <option value="run">走る</option>
+                </select>
+
+            </p>
+            <p>
+                <button type="submit">送信</button>
+                <button type="reset">リセット</button>
+                <button type="button">ただのボタン</button>
+            </p>
+
+
+
+
+         </form>
+    
+</body>
+</html>

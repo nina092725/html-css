@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>餃子ゲーム</title>
+  <style>
+    body {
+      background-color: #e12828;
+      text-align: center;
+    }
+    .gyoza {
+      width: 200px;
+      height: 150px;
+      background-image: url('https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG91D0jtYA8ffcvNYEaSWqFiu6NEj1MaTdZ-CPt-6YVVlxyY7tEABkq5AmX6qnvqGZmed64ETuP84c8JVyMCEPV7WJ9EAFiBzxsI8H3Gi1ChPjBBSva49GOyy8gqnSXM2Hlxo9GdzNlmSFvpib3ht_39WBhYR-kakwv6tXhUZOSSNL6_-q_j_Il6wljVgYr7orVmXcaVcjbFAZYalpRnrpoMOq7p0ao-M62VyzK7enhDOCJXLio-lVhziOSQTXo3IJ4NyfY1KgqH6Tp8L-afBkUc=/gyouza0347.JPG'); /* 餃子の画像 */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>餃子ゲーム</h1>
+  <img src="https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG91D0jtYA8ffcvNYEaSWqFiu6NEj1MaTdZ-CPt-6YVVlxyY7tEABkq5AmX6qnvqGZmed64ETuP84c8JVyMCEPV7WJ9EAFiBzxsI8H3Gi1ChPjBBSva49GOyy8gqnSXM2Hlxo9GdzNlmSFvpib3ht_39WBhYR-kakwv6tXhUZOSSNL6_-q_j_Il6wljVgYr7orVmXcaVcjbFAZYalpRnrpoMOq7p0ao-M62VyzK7enhDOCJXLio-lVhziOSQTXo3IJ4NyfY1KgqH6Tp8L-afBkUc=/gyouza0347.JPG" class="gyoza" onclick="jump()">
+  <script>
+    function jump() {
+      alert('餃子をクリックしたね！');
+    }
+  </script>
+</body>
+</html>
